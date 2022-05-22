@@ -71,3 +71,10 @@ def test_lambda_handler(apigw_event, mocker):
     assert "message" in ret["body"]
     assert data["message"] == "hello world"
     # assert "location" in data.dict_keys()
+
+# class TryTesting(TestCase):
+#     def test_always_passes(self):
+#         self.assertTrue(True)
+
+#     def test_always_fails(self):
+#         self.assertTrue(False)
