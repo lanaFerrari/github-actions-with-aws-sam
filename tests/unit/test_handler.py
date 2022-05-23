@@ -3,6 +3,8 @@ import json
 import pytest
 
 from hello_world import app
+from unittest import TestCase
+
 
 
 @pytest.fixture()
@@ -72,9 +74,9 @@ def test_lambda_handler(apigw_event, mocker):
     assert data["message"] == "hello world"
     # assert "location" in data.dict_keys()
 
-# class TryTesting(TestCase):
-#     def test_always_passes(self):
-#         self.assertTrue(True)
+class TryTesting(TestCase):
+    def test_always_passes(self):
+        self.assertTrue(True)
 
-#     def test_always_fails(self):
-#         self.assertTrue(False)
+    def test_always_failts(self):
+        self.assertTrue(True)
